@@ -37,5 +37,62 @@ export const MOCK_COMPANIES = [
     website: "https://tcs.com",
     categories: ["IT Services", "Consulting"],
     mapUrl: "https://maps.google.com/?cid=789"
+  },
+  {
+    id: "4",
+    title: "Cognizant",
+    totalScore: 4.1,
+    reviewsCount: 12100,
+    street: "MEPZ, Thoraipakkam",
+    city: "Chennai",
+    state: "Tamil Nadu",
+    phone: null,
+    website: "https://cognizant.com",
+    categories: ["IT Consulting", "Outsourcing"],
+    mapUrl: "https://maps.google.com/?cid=101"
+  },
+  {
+    id: "5",
+    title: "Infosys",
+    totalScore: null,
+    reviewsCount: null,
+    street: "Mahindra World City",
+    city: "Chennai",
+    state: "Tamil Nadu",
+    phone: "+91 44 4741 1111",
+    website: "https://infosys.com",
+    categories: ["IT Services"],
+    mapUrl: "https://maps.google.com/?cid=102"
   }
 ];
+
+// Simulated API calls
+export const api = {
+  getCompanies: async () => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(MOCK_COMPANIES), 300);
+    });
+  },
+  
+  searchCompanies: async (query) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        const q = query.toLowerCase();
+        const results = MOCK_COMPANIES.filter(c => 
+          c.title.toLowerCase().includes(q) ||
+          (c.city && c.city.toLowerCase().includes(q)) ||
+          c.categories.some(cat => cat.toLowerCase().includes(q))
+        );
+        resolve(results);
+      }, 300);
+    });
+  },
+
+  getCompany: async (id) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(MOCK_COMPANIES.find(c => c.id === id));
+      }, 300);
+    });
+  }
+};
