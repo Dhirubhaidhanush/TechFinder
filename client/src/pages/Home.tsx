@@ -1,6 +1,26 @@
 import { useState, useEffect } from "react";
-import { Search, MapPin, Building, Globe, X, ExternalLink } from "lucide-react";
+import { Search, MapPin, Building, Globe, X, ExternalLink, Star } from "lucide-react";
 import { api } from "../data";
+
+// Helper component for Star Rating
+function StarRating({ score }) {
+  if (!score) return null;
+  
+  // Calculate full stars and determine text
+  const fullStars = Math.round(score);
+  const starsText = `${score} star${score !== 1 ? 's' : ''}`;
+  
+  return (
+    <div className="flex items-center gap-1.5 bg-[#FFFBEB] text-[#D97706] px-3 py-1.5 rounded-lg shrink-0">
+      <div className="flex">
+        {[...Array(fullStars)].map((_, i) => (
+          <Star key={i} className="w-3.5 h-3.5 fill-[#F59E0B] text-[#F59E0B]" />
+        ))}
+      </div>
+      <span className="text-xs font-bold whitespace-nowrap">{starsText}</span>
+    </div>
+  );
+}
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -130,11 +150,8 @@ export default function Home() {
                     {company.title}
                   </button>
                   
-                  {company.totalScore && (
-                    <div className="flex items-center gap-1 bg-[#FFFBEB] text-[#92400E] px-2.5 py-1 rounded-lg text-sm font-bold shrink-0">
-                      <span className="text-[10px]">★</span> {company.totalScore}
-                    </div>
-                  )}
+                  {/* Dynamic Yellow Star Rating Pill */}
+                  <StarRating score={company.totalScore} />
                 </div>
                 
                 {/* Location text simply as span since we moved links below */}
@@ -145,32 +162,28 @@ export default function Home() {
                   </span>
                 </div>
                 
-                {/* Links placed exactly below the location */}
-                <div className="flex flex-col gap-2 mb-5 pl-7">
-                   {company.website ? (
+                {/* Side-by-side action buttons */}
+                <div className="flex gap-3 mb-5 pl-1">
+                   {company.website && (
                       <a 
                         href={company.website} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-[#10B981] hover:text-[#059669] text-sm font-semibold hover:underline transition-colors flex items-center"
+                        className="flex-1 bg-[#10B981] hover:bg-[#059669] text-white text-[13px] font-semibold py-2 px-3 rounded-lg text-center transition-colors"
                       >
                          Visit Website
                       </a>
-                    ) : (
-                      <span className="text-gray-400 text-sm font-medium">Website N/A</span>
                     )}
 
-                    {company.url ? (
+                    {company.url && (
                       <a 
                         href={company.url} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-[#10B981] hover:text-[#059669] text-sm font-semibold hover:underline transition-colors flex items-center"
+                        className="flex-1 bg-white border border-[#10B981] text-[#10B981] hover:bg-green-50 text-[13px] font-semibold py-2 px-3 rounded-lg text-center transition-colors"
                       >
                         Google Maps
                       </a>
-                    ) : (
-                       <span className="text-gray-400 text-sm font-medium">Maps N/A</span>
                     )}
                 </div>
 
@@ -214,9 +227,7 @@ export default function Home() {
                   {selectedCompany.title}
                 </h2>
                 {selectedCompany.totalScore && (
-                  <div className="flex items-center gap-1 bg-[#FFFBEB] text-[#92400E] px-3 py-1.5 rounded-lg text-sm font-bold shrink-0 shadow-sm">
-                    <span>★</span> {selectedCompany.totalScore}
-                  </div>
+                  <StarRating score={selectedCompany.totalScore} />
                 )}
               </div>
 
@@ -289,7 +300,7 @@ export default function Home() {
                     href={selectedCompany.url} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex-none flex items-center justify-center bg-white border-2 border-gray-200 text-gray-700 hover:border-[#10B981] hover:text-[#10B981] font-semibold py-4 px-6 rounded-xl transition-colors"
+                    className="flex-none flex items-center justify-center bg-white border-2 border-[#10B981] text-[#10B981] hover:bg-green-50 font-semibold py-4 px-6 rounded-xl transition-colors"
                   >
                     View on Maps <ExternalLink className="w-5 h-5 ml-2" />
                   </a>
