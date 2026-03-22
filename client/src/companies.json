@@ -33,6 +33,22 @@
   "categoryName": "Software company"
 },
 {
+  "title": "HCLTech",
+  "totalScore": 4.4,
+  "reviewsCount": 7497,
+  "street": "138, 602/3, Medavakkam High Road, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.hcltech.com/geo-presence/india",
+  "categories": [
+    "Software company",
+    "Corporate office"
+  ],
+  "url": "https://maps.app.goo.gl/vheiabqtZMRUTMnz5",
+  "categoryName": "Software company"
+},
+{
   "title": "VYPHERA Groups",
   "totalScore": 5,
   "reviewsCount": 1,
@@ -14248,6 +14264,21 @@
   "categoryName": "Computer store"
 },
 {
+  "title": "HCLTech",
+  "reviewsCount": 3.9,
+  "street": "Sterling Technopolis, 4/293, Rajiv Gandhi Salai, Perungudi, Chennai, Tamil Nadu 600096",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.hcltech.com/geo-presence/india",
+  "phone": "+91 9003977135",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/v8GFdqvbJdXuPEE1A",
+  "categoryName": "Software company"
+},
+{
   "title": "Leprofile - India",
   "reviewsCount": null,
   "street": "110/1, Uthamar Gandhi Rd",
@@ -14544,6 +14575,21 @@
     "Software company"
   ],
   "url": "https://www.google.com/maps/search/?api=1&query=CLOUD9%20SOFT%20TECHNOLOGIES-TALLY%203%20STAR%20CERFITED%20PARTNER&query_place_id=ChIJ43T7bFlmUjoRjIBLp0bp8ek",
+  "categoryName": "Software company"
+},
+{
+  "title": "HCLTech",
+  "reviewsCount": 4.0,
+  "street": "8, South Phase, MTH Road Ambattur Industrial Estate, Ambattur, Chennai, Tamil Nadu 600058",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.hcltech.com/geo-presence/india",
+  "phone": "+91 9003977135",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/cgiVkCCGvZDAoRxe9",
   "categoryName": "Software company"
 },
 {
@@ -20059,4 +20105,292 @@
   ],
   "url": "https://www.google.com/maps/search/?api=1&query=Madras%20Security%20Printers%20Pvt%20Ltd&query_place_id=ChIJmb2-1nNlUjoRbI960HB0vjY",
   "categoryName": "Commercial printer"
-}]
+},
+{
+  "title": "HCLTech",
+  "reviewsCount": 4.2,
+  "street": "73-74, Ambattur Industrial Estate Rd, South Phase, Mogappair, Chennai, Tamil Nadu 600058",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.hcltech.com/geo-presence/india",
+  "phone": "04443935000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/aLvtbnZ63GYkXPEL8",
+  "categoryName": "Software company"
+},
+{
+  "title": "HCLTech",
+  "reviewsCount": 4.2,
+  "street": "Special Economic Zone 33, ETA TECHNO PARK, Rajiv Gandhi Salai, Navalur, Tamil Nadu 600130",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "http://www.hcltech.com/",
+  "phone": "04447461000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/2kPtYzRgEEF1nUWw8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Hcl Technologies AMB-5",
+  "reviewsCount": 4.1,
+  "street": "260, Ambattur Industrial Estate Rd, Mogappair, Mogappair East, Chennai, Tamil Nadu 600058",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "http://www.hcl.com/",
+  "phone": "09597728946",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/xsBFbT4PxRFRfyiG6",
+  "categoryName": "Software company"
+},
+{
+  "title": "HCL Tower 5",
+  "reviewsCount": 4.5,
+  "street": "HCL TECHNOLOGICAL, SEZ Ave, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/H6zzxi5bVd4o6MvT6",
+  "categoryName": "Software company"
+},
+{
+  "title": "HCL Tower 1",
+  "reviewsCount": 4.4,
+  "street": "HCL TECHNOLOGICAL, 602/603, Perumbakkam Main Rd, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/nMSdftsBbxmfhi9M8",
+  "categoryName": "Software company"
+},
+{
+  "title": "HCLTech",
+  "reviewsCount": 4.6,
+  "street": "6th floor, 2/1, Abu Gardens, Ozone Technopark, Rajiv Gandhi Salai, Navalur, Chennai, Tamil Nadu 600130",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.hcltech.com/geo-presence/india",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/DPKQoADxnUzpRTiy8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Zoho Corporation",
+  "reviewsCount": 4.6,
+  "street": "Estancia IT Park,Vallancherry Plot No. 140 & 151, Grand Southern Trunk Road, Vallancherry, Taluk, Chengalpattu, Tamil Nadu 603202",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.zoho.com/",
+  "phone": "18001031123",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/fZFe3n5xAqXXQDNK8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant Technology Solutions",
+  "reviewsCount": 4.5,
+  "street": "SEZ Ave, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "http://www.cognizant.com/",
+  "phone": "18002086999",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/hszYQHwwmNjQQbkf9",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant Technology Solutions",
+  "reviewsCount": 4.3,
+  "street": "DLF IT Park Rd, Manapakkam, Chennai, Tamil Nadu 600089",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "http://www.cognizant.com/",
+  "phone": "18002086999",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/tNH9HU6WbwLSv5T86",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant Technology Solutions",
+  "reviewsCount": 4.5,
+  "street": "2nd Cross St, Madras Export Processing Zone, Tambaram, Chennai, Tamil Nadu 600045",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "http://www.cognizant.com/",
+  "phone": "04442096000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/KhDVeLFGhACVNVmJ7",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant SRZ SDB 1",
+  "reviewsCount": 4.5,
+  "street": "R6G9+5VG, Siruseri, Tamil Nadu 603103",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.cognizant.com/",
+  "phone": "18002086999",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/7da36REKVASNscWQ9",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant SRZ SDB2",
+  "reviewsCount": 4.4,
+  "street": "R6F9+9W8, Siruseri, Tamil Nadu 603103",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/RikVZGTsrS3MiW6T8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Cognizant Technology Solutions",
+  "reviewsCount": 4.5,
+  "street": "Ozone Techno Park, Navalur, Tamil Nadu 600130",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.cognizant.com/in/en",
+  "phone": "18002086999",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/SdWhBMLL6DUqdtH3A",
+  "categoryName": "Software company"
+},
+{
+  "title": "Infosys",
+  "reviewsCount": 4.3,
+  "street": "GUEST HOUSE, INFOSYS-NEDUNCHEZIAN SALAI, 138, Nedunchezian Salai, Sholinganallur, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.infosys.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/2YbjUp7NZoaTMxsu7",
+  "categoryName": "Software company"
+},
+{
+  "title": "Infosys BPM Limited",
+  "reviewsCount": 4.2,
+  "street": "Unit in Ramanujan IT CITY SEZ, Hardy Tower, 3rd and 4th Floors TRIL Infopark Limited, Rajiv Gandhi Salai (OMR, Rajiv Gandhi Salai, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website": "https://www.infosysbpm.com/",
+  "phone":"04439922100",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/wHZVB1h3wTqCTydF8",
+  "categoryName": "Software company"
+},
+{
+  "title": "RESULTICKS EDGE SOLUTION TECHNOLOGIES PRIVATE LIMITED",
+  "reviewsCount": 4.3,
+  "street": "5th Floor, SKCL Central Square 1, C-28 to C35, Thiru Vi Ka Industrial Estate, Guindy, Chennai, Tamil Nadu 600032",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.resulticks.com/",
+  "phone":"04445600800",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/W8u1Cp8oNjk7YdWQ9",
+  "categoryName": "Software company"
+},
+{
+  "title": "SGS Tech Solutions",
+  "street": "RR Tower I,II, A-17, Thiru Vi Ka Industrial Estate, SIDCO Industrial Estate, Guindy, Chennai, Tamil Nadu 600032",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/wCwTHZrDnCd7eFNcA",
+  "categoryName": "Software company"
+},
+{
+  "title": "Hexaware Technologies",
+  "reviewsCount": 3.6,
+  "street": "MCN Nagar Ext, MCN Nagar Extension, Thoraipakkam, Tamil Nadu 600097",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://hexaware.com/",
+  "phone":"02267919500",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/ugvNVbznYVN1fe7r5",
+  "categoryName": "Software company"
+},
+{
+  "title": "HEXAWARE TECHNOLOGIES",
+  "reviewsCount": 4.2,
+  "street": "H-5, Sipcot It Park, Post, Navalur, Siruseri, Tamil Nadu 603103",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.hexaware.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/Xs2h6bbtfsjiqxwk7",
+  "categoryName": "Software company"
+},
+{
+  "title": "Hexaware Technologies",
+  "reviewsCount": 4.1,
+  "street": "S. No, 56/3A, 200 Feet Radial Rd, Ganesh Avenue, Rose Avenue, Pallikaranai, Chennai, Tamil Nadu 600100",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://hexaware.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/zwyvbJWMXecgnCWR6",
+  "categoryName": "Software company"
+}
+]

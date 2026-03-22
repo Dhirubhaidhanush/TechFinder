@@ -79,17 +79,13 @@ export default function Home() {
 
       {/* Header Section */}
       <div className="pt-16 px-8 pb-12 text-center max-w-3xl mx-auto flex flex-col items-center w-full relative">
-        <div className="absolute -left-32 top-10 w-20 h-20 bg-[#2A2E3D] rounded-2xl flex items-center justify-center shadow-lg hidden xl:flex">
-          <Globe className="w-10 h-10 text-white" />
-        </div>
-
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-sm font-medium mb-8 border border-green-100">
           <Building className="w-4 h-4" />
           <span>Corporate Tech Ecosystem</span>
         </div>
 
         <h1 className="text-5xl md:text-[3.5rem] font-extrabold tracking-tight text-[#111827] leading-[1.1] mb-6 font-display">
-          Discover <span className="text-[#10B981]">IT Companies</span>
+          Discover all <span className="text-[#10B981]">IT Companies</span>
           <br />
           in Chennai
         </h1>
