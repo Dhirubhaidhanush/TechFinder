@@ -137,25 +137,43 @@ export default function Home() {
                   )}
                 </div>
                 
-                {/* Location text wrapped in Google Maps link */}
+                {/* Location text simply as span since we moved links below */}
                 <div className="flex items-start text-gray-500 mb-5 text-[15px] font-medium leading-tight">
                   <MapPin className="w-[18px] h-[18px] mr-2 text-gray-400 shrink-0 mt-0.5" />
-                  {company.url ? (
-                    <a 
-                      href={company.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="hover:text-[#10B981] hover:underline transition-colors"
-                    >
-                      {company.city ? `${company.city}, ${company.state || "Tamil Nadu"}` : "Chennai, Tamil Nadu"}
-                    </a>
-                  ) : (
-                    <span>
-                      {company.city ? `${company.city}, ${company.state || "Tamil Nadu"}` : "Chennai, Tamil Nadu"}
-                    </span>
-                  )}
+                  <span>
+                    {company.city ? `${company.city}, ${company.state || "Tamil Nadu"}` : "Chennai, Tamil Nadu"}
+                  </span>
                 </div>
                 
+                {/* Links placed exactly below the location */}
+                <div className="flex flex-col gap-2 mb-5 pl-7">
+                   {company.website ? (
+                      <a 
+                        href={company.website} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-[#10B981] hover:text-[#059669] text-sm font-semibold hover:underline transition-colors flex items-center"
+                      >
+                         Visit Website
+                      </a>
+                    ) : (
+                      <span className="text-gray-400 text-sm font-medium">Website N/A</span>
+                    )}
+
+                    {company.url ? (
+                      <a 
+                        href={company.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-[#10B981] hover:text-[#059669] text-sm font-semibold hover:underline transition-colors flex items-center"
+                      >
+                        Google Maps
+                      </a>
+                    ) : (
+                       <span className="text-gray-400 text-sm font-medium">Maps N/A</span>
+                    )}
+                </div>
+
                 <div className="mt-auto pt-4 border-t border-gray-100/80 flex flex-wrap gap-2">
                   {company.categories && company.categories.slice(0, 1).map((cat, idx) => (
                     <span key={idx} className="px-3.5 py-1.5 bg-[#F8F9FA] text-[#4B5563] rounded-full text-[13px] font-medium">
