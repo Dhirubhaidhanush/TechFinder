@@ -44,6 +44,19 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
+      
+      {/* Navigation Bar */}
+      <nav className="w-full px-8 py-6 flex items-center justify-between border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-md z-40">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-[#10B981] rounded-lg flex items-center justify-center">
+            <Globe className="w-5 h-5 text-white" />
+          </div>
+          <span className="text-2xl font-bold text-[#111827] font-display tracking-tight">
+            Tech<span className="text-[#10B981]">finder</span>
+          </span>
+        </div>
+      </nav>
+
       {/* Header Section */}
       <div className="pt-16 px-8 pb-12 text-center max-w-3xl mx-auto flex flex-col items-center w-full relative">
         <div className="absolute -left-32 top-10 w-20 h-20 bg-[#2A2E3D] rounded-2xl flex items-center justify-center shadow-lg hidden xl:flex">
@@ -56,7 +69,7 @@ export default function Home() {
         </div>
 
         <h1 className="text-5xl md:text-[3.5rem] font-extrabold tracking-tight text-[#111827] leading-[1.1] mb-6 font-display">
-          Discover <span className="text-[#10B981]">Techfinder</span>
+          Discover <span className="text-[#10B981]">IT Companies</span>
           <br />
           in Chennai
         </h1>
