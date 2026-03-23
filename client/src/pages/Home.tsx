@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { Search, MapPin, Building, Globe, X, ExternalLink, Star } from "lucide-react";
+import { Search, MapPin, Building, Globe, X, Star, Phone, Send } from "lucide-react";
 import { api } from "../data";
 
 // Helper component for Star Rating
 function StarRating({ score }) {
   if (!score) return null;
   
-  // Calculate full stars and determine text
   const fullStars = Math.round(score);
   const starsText = `${score} star${score !== 1 ? 's' : ''}`;
   
@@ -53,7 +52,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  // Handle closing modal on escape key
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') setSelectedCompany(null);
@@ -68,11 +66,11 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="w-full px-8 py-6 flex items-center justify-between border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-md z-40">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#10B981] rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center">
             <Globe className="w-5 h-5 text-white" />
           </div>
-          <span className="text-2xl font-bold text-[#111827] font-display tracking-tight">
-            Tech<span className="text-[#10B981]">finder</span>
+          <span className="text-2xl font-bold text-green-400 font-display tracking-tight">
+            Tech<span className="text-green-400">finder</span>
           </span>
         </div>
       </nav>
@@ -85,7 +83,7 @@ export default function Home() {
         </div>
 
         <h1 className="text-5xl md:text-[3.5rem] font-extrabold tracking-tight text-[#111827] leading-[1.1] mb-6 font-display">
-          Discover all <span className="text-[#10B981]">IT Companies</span>
+          Discover all <span className="text-green-400">IT Companies</span>
           <br />
           in Chennai
         </h1>
@@ -105,7 +103,7 @@ export default function Home() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button className="bg-[#10B981] hover:bg-[#059669] text-white px-8 py-3 rounded-full font-medium transition-colors">
+          <button className="bg-green-400 hover:bg-green-500 cursor-pointer text-white px-8 py-3 rounded-full font-medium transition-colors">
             Search
           </button>
         </div>
@@ -132,173 +130,134 @@ export default function Home() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
             {companies.map(company => (
-              <div 
+              <div
                 key={company.id}
-                className="bg-white border border-gray-200/80 rounded-[20px] p-6 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                onClick={() => setSelectedCompany(company)}
+                className="bg-[#F9FAFB] border border-gray-200 rounded-3xl p-6 
+                hover:shadow-xl hover:-translate-y-1 transition-all duration-300 
+                flex flex-col h-full cursor-pointer"
               >
-                <div className="flex justify-between items-start mb-4 gap-4">
-                  {/* Green text for company name, clicking opens modal */}
-                  <button 
-                    onClick={() => setSelectedCompany(company)}
-                    className="text-[1.15rem] font-bold text-[#10B981] hover:text-[#059669] transition-colors text-left line-clamp-2 font-display leading-tight"
-                  >
+                {/* Top Content */}
+                <div className="flex flex-col gap-5">
+
+                  <h3 className="text-xl font-bold text-gray-900 line-clamp-2">
                     {company.title}
-                  </button>
-                  
-                  {/* Dynamic Yellow Star Rating Pill */}
-                  <StarRating score={company.totalScore} />
-                </div>
-                
-                {/* Location text simply as span since we moved links below */}
-                <div className="flex items-start text-gray-500 mb-5 text-[15px] font-medium leading-tight">
-                  <MapPin className="w-[18px] h-[18px] mr-2 text-gray-400 shrink-0 mt-0.5" />
-                  <span>
-                    {company.city ? `${company.city}, ${company.state || "Tamil Nadu"}` : "Chennai, Tamil Nadu"}
+                  </h3>
+
+                  <div className="flex items-center gap-2 text-green-600 text-sm font-medium">
+                    <Building className="w-4 h-4" />
+                    <span>{company.categories?.[0] || "Software company"}</span>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <StarRating score={company.totalScore} />
+                    <span className="text-gray-400 text-sm">
+                      ({company.reviewsCount || 0})
+                    </span>
+                  </div>
+
+                  <span className="bg-green-100 text-green-700 text-sm px-4 py-1 rounded-full w-fit">
+                    {company.categories?.[0] || "Software company"}
                   </span>
                 </div>
-                
-                {/* Side-by-side action buttons */}
-                <div className="flex gap-3 mb-5 pl-1">
-                   {company.website && (
-                      <a 
-                        href={company.website} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex-1 bg-[#10B981] hover:bg-[#059669] text-white text-[13px] font-semibold py-2 px-3 rounded-lg text-center transition-colors"
+
+                {/* Buttons */}
+                <div className="mt-auto pt-6">
+                  <div className="border-t border-gray-200 mb-4"></div>
+
+                  <div className="flex gap-4">
+                    {company.website && (
+                      <a
+                        href={company.website}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl text-center font-medium"
                       >
-                         Visit Website
+                        Website
                       </a>
                     )}
 
                     {company.url && (
-                      <a 
-                        href={company.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex-1 bg-white border border-[#10B981] text-[#10B981] hover:bg-green-50 text-[13px] font-semibold py-2 px-3 rounded-lg text-center transition-colors"
+                      <a
+                        href={company.url}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-xl text-center font-medium flex items-center justify-center gap-2"
                       >
-                        Google Maps
+                        <Send className="w-4 h-4" />
+                        Directions
                       </a>
                     )}
-                </div>
-
-                <div className="mt-auto pt-4 border-t border-gray-100/80 flex flex-wrap gap-2">
-                  {company.categories && company.categories.slice(0, 1).map((cat, idx) => (
-                    <span key={idx} className="px-3.5 py-1.5 bg-[#F8F9FA] text-[#4B5563] rounded-full text-[13px] font-medium">
-                      {cat}
-                    </span>
-                  ))}
-                  {company.categories && company.categories.length > 1 && (
-                    <span className="px-3.5 py-1.5 bg-[#F8F9FA] text-[#4B5563] rounded-full text-[13px] font-medium">
-                      +{company.categories.length - 1}
-                    </span>
-                  )}
+                  </div>
                 </div>
               </div>
             ))}
+
           </div>
         )}
       </div>
 
-      {/* Details Modal */}
+      {/* Modal */}
       {selectedCompany && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
           <div 
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setSelectedCompany(null)}
           ></div>
-          
-          <div className="relative bg-white rounded-[24px] w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in zoom-in-95 duration-200">
+
+          <div className="relative bg-white rounded-[24px] w-full max-w-lg shadow-2xl">
             <button 
               onClick={() => setSelectedCompany(null)}
-              className="absolute top-4 right-4 p-2 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-500 transition-colors z-10"
+              className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full"
             >
-              <X className="w-5 h-5" />
+              <X />
             </button>
 
-            <div className="p-8 sm:p-10">
-              <div className="flex justify-between items-start mb-6">
-                <h2 className="text-3xl font-bold text-[#10B981] font-display pr-12">
-                  {selectedCompany.title}
-                </h2>
-                {selectedCompany.totalScore && (
-                  <StarRating score={selectedCompany.totalScore} />
-                )}
+            <div className="p-8">
+              <h2 className="text-2xl font-bold text-green-400 mb-4">
+                {selectedCompany.title}
+              </h2>
+
+              <div className="flex items-center gap-2 mb-4">
+                <StarRating score={selectedCompany.totalScore} />
+                <span className="text-gray-500">
+                  ({selectedCompany.reviewsCount})
+                </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Categories</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedCompany.categories && selectedCompany.categories.length > 0 ? (
-                        selectedCompany.categories.map((cat, idx) => (
-                          <span key={idx} className="px-3.5 py-1.5 bg-[#F8F9FA] text-[#4B5563] rounded-full text-sm font-medium">
-                            {cat}
-                          </span>
-                        ))
-                      ) : (
-                        <span className="text-gray-600">N/A</span>
-                      )}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Reviews Count</h4>
-                    <p className="text-gray-700 font-medium text-lg">{selectedCompany.reviewsCount || "N/A"}</p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Phone Number</h4>
-                    <p className="text-gray-700 font-medium text-lg">{selectedCompany.phone || "N/A"}</p>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Street Address</h4>
-                    <p className="text-gray-700 font-medium text-lg leading-relaxed">{selectedCompany.street || "N/A"}</p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">City / State</h4>
-                    <p className="text-gray-700 font-medium text-lg">
-                      {(selectedCompany.city || selectedCompany.state) ? 
-                        `${selectedCompany.city || "N/A"}, ${selectedCompany.state || "N/A"}` : 
-                        "N/A"}
-                    </p>
-                  </div>
-                </div>
+              <div className="flex items-start gap-2 text-gray-600 mb-3">
+                <MapPin className="w-5 h-5 mt-1" />
+                <span>
+                  {selectedCompany.street}, {selectedCompany.city}, {selectedCompany.state}
+                </span>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-gray-100">
-                {selectedCompany.website ? (
-                  <a 
-                    href={selectedCompany.website} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-[#10B981] hover:bg-[#059669] text-white font-semibold py-4 px-6 rounded-xl text-center transition-colors shadow-md shadow-green-500/20"
+              <div className="flex items-center gap-2 text-gray-600 mb-6">
+                <Phone className="w-5 h-5" />
+                <span>{selectedCompany.phone || "N/A"}</span>
+              </div>
+
+              <div className="flex gap-3">
+                {selectedCompany.website && (
+                  <a
+                    href={selectedCompany.website}
+                    target="_blank"
+                    className="flex-1 bg-green-500 text-white py-3 rounded-xl text-center"
                   >
-                    Visit Website
+                    Website
                   </a>
-                ) : (
-                  <button 
-                    disabled
-                    className="flex-1 bg-gray-100 text-gray-400 font-semibold py-4 px-6 rounded-xl text-center cursor-not-allowed"
-                  >
-                    Website N/A
-                  </button>
                 )}
 
                 {selectedCompany.url && (
-                  <a 
-                    href={selectedCompany.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex-none flex items-center justify-center bg-white border-2 border-[#10B981] text-[#10B981] hover:bg-green-50 font-semibold py-4 px-6 rounded-xl transition-colors"
+                  <a
+                    href={selectedCompany.url}
+                    target="_blank"
+                    className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl text-center flex items-center justify-center gap-2"
                   >
-                    View on Maps <ExternalLink className="w-5 h-5 ml-2" />
+                    <Send className="w-4 h-4" />
+                    Directions
                   </a>
                 )}
               </div>
