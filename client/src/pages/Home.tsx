@@ -103,9 +103,9 @@ export default function Home() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button className="bg-green-400 hover:bg-green-500 cursor-pointer text-white px-8 py-3 rounded-full font-medium transition-colors">
+          {/* <button className="bg-green-400 hover:bg-green-500 cursor-pointer text-white px-8 py-3 rounded-lg font-medium transition-colors">
             Search
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export default function Home() {
                         href={company.website}
                         target="_blank"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl text-center font-medium"
+                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg text-center font-medium"
                       >
                         Website
                       </a>
@@ -184,7 +184,7 @@ export default function Home() {
                         href={company.url}
                         target="_blank"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-xl text-center font-medium flex items-center justify-center gap-2"
+                        className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-lg text-center font-medium flex items-center justify-center gap-2"
                       >
                         <Send className="w-4 h-4" />
                         Directions
