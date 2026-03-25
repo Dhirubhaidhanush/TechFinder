@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import { Search, MapPin, Building, Globe, X, Star, Phone, Send } from "lucide-react";
+import { Search, MapPin, Building, X, Star, Phone, Send } from "lucide-react";
 import { api } from "../data";
 
 // Helper component for Star Rating
 function StarRating({ score }) {
   if (!score) return null;
-  
+
   const fullStars = Math.round(score);
   const starsText = `${score} star${score !== 1 ? 's' : ''}`;
-  
+
   return (
     <div className="flex items-center gap-1.5 bg-[#FFFBEB] text-[#D97706] px-3 py-1.5 rounded-lg shrink-0">
       <div className="flex">
@@ -62,15 +62,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
-      
+
       {/* Navigation Bar */}
       <nav className="w-full px-8 py-6 flex items-center justify-between border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-md z-40">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center">
-            <Globe className="w-5 h-5 text-white" />
+            <Building className="w-5 h-5 text-white" />
           </div>
           <span className="text-2xl font-bold text-green-400 font-display tracking-tight">
-            Tech<span className="text-green-400">finder</span>
+            Tech<span className="text-green-400">Finder</span>
           </span>
         </div>
       </nav>
@@ -98,8 +98,8 @@ export default function Home() {
           </div>
           <input
             type="text"
-            placeholder="Search by name, category, or location..."
-            className="flex-1 bg-transparent border-none outline-none text-gray-700 placeholder-gray-400 text-base py-3"
+            placeholder="Search company name"
+            className="flex-1 bg-transparent border-none outline-none text-black placeholder-gray-400 text-base py-3"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -202,13 +202,13 @@ export default function Home() {
       {/* Modal */}
       {selectedCompany && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
-          <div 
+          <div
             className="absolute inset-0 bg-black/40 backdrop-blur-sm"
             onClick={() => setSelectedCompany(null)}
           ></div>
 
           <div className="relative bg-white rounded-[24px] w-full max-w-lg shadow-2xl">
-            <button 
+            <button
               onClick={() => setSelectedCompany(null)}
               className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full"
             >
