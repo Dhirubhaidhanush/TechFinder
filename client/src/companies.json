@@ -19613,7 +19613,7 @@
     "Software company"
   ],
   "url": "https://maps.app.goo.gl/BwaZQQbSeKTi67xi8",
-  "categoryName": "Financial Audit"
+  "categoryName": "Software company"
 },
 {
   "title": "Syncfusion Software Private Limited",
@@ -19628,6 +19628,20 @@
     "Software company"
   ],
   "url": "https://maps.app.goo.gl/khgadt3Ums3DP1it5",
-  "categoryName": "Financial Audit"
+  "categoryName": "Software company"
+},
+{
+  "title": "Infotel IT Consulting Private Limited",
+  "reviewsCount": 3.9,
+  "street": "2nd Floor , Module 5,Ramanujan IT City,TRIL IT/ITES-SEZ Neville Tower, SH 49A, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://infotel-india.in/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/L3Yaw19TgLtdojG7A",
+  "categoryName": "Software company"
 }
 ]
