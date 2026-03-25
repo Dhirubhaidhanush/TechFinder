@@ -504,19 +504,6 @@
   "categoryName": "Software company"
 },
 {
-  "title": "NAMVISH TECHNOLOGIES PRIVATE LIMITED",
-  "reviewsCount": null,
-  "street": "4/580 -2 Jagir Ammapalayam Block 4 Jagir Ammapalayam Salem-636302",
-  "city": "Chennai",
-  "state": "Tamil Nadu",
-  "countryCode": "IN",
-  "categories": [
-    "Software company"
-  ],
-  "url": "https://www.google.com/maps/search/?api=1&query=NAMVISH%20TECHNOLOGIES%20PRIVATE%20LIMITED&query_place_id=ChIJUcO0JjRvUjoRQ1XzhfkQ6BU",
-  "categoryName": "Software company"
-},
-{
   "title": "Umaa Infotech",
   "totalScore": 5,
   "reviewsCount": 12,
@@ -19278,5 +19265,369 @@
   ],
   "url": "https://maps.app.goo.gl/hpztPVC8CQ2NYXK9A",
   "categoryName": "Software company"
+},
+{
+  "title": "TCS",
+  "reviewsCount": 4.4,
+  "street": "11th Floor – A Block, TIDEL Park, No. 4, Canal Bank Rd, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.tcs.com/worldwide/india/locations/office-locations/Pages/default.aspx",
+  "phone":"04466163555",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/iaB7uF7B4RuzSFjt9",
+  "categoryName": "Software company"
+},
+{
+  "title": "TCS Chennai-Two Magnum campus",
+  "reviewsCount": 4.1,
+  "street": "Module-4, 3rd Floor South Block, Chennai One It Sez Phase-2, 200 Feet Radial Rd, inner, ring road, MCN Nagar Extension, Pallavaram, Thoraipakkam, Tamil Nadu 600097",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/tA7gifzH5kbBwKqn8",
+  "categoryName": "Software company"
+},
+{
+  "title": "TCS CHENNAI",
+  "reviewsCount": 4.2,
+  "street": "Industrial Estate, 21, Ambattur Industrial Estate 1st Cross Rd, Sai Nagar, Ambattur, Chennai, Tamil Nadu 600058",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.tcs.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/8LogfNqChe2YCcRo6",
+  "categoryName": "Software company"
+},
+{
+  "title": "TCS Siruseri - EB5",
+  "reviewsCount": 4.7,
+  "street": "EB 5, TCS, First Main Rd, Siruseri, Tamil Nadu 603103",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.tcs.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/SWrp9BKZCUnGZWiX7",
+  "categoryName": "Software company"
+},
+{
+  "title": "TCS Siruseri (TATA Consultancy Services Ltd)",
+  "reviewsCount": 4.6,
+  "street": "1/G1, SIPCOT IT Park Navalur, Siruseri, Tamil Nadu 603103",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.tcs.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/NfCL5S4JdasqQyHt7",
+  "categoryName": "Software company"
+},
+{
+  "title": "Tata Consultancy Services Ltd",
+  "reviewsCount": 4.3,
+  "street": "1/124, 9th Floor, Mount Poonamalee Road, DLF IT Park Rd, Block 9, Mugalivakkam, Chennai, Tamil Nadu 600089",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.tcs.com/",
+  "phone":"18002093111",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/Gop8TF9D3TV2JK7P8",
+  "categoryName": "Software company"
+},
+{
+  "title": "TCS ( Tata Consultancy Services )",
+  "reviewsCount": 4.4,
+  "street": "Kumaran Nagar, 415/21-24, TNHB Main Rd, Chennai, Tamil Nadu 600119",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.tcs.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/9s6vXd4uqRKXpNH38",
+  "categoryName": "Software company"
+},
+{
+  "title": "Tata Consultancy Services -Velachery",
+  "reviewsCount": 4.2,
+  "street": "5th Floor, Tata Consultancy Services, Taramani 100 Feet Road, 165/1A, New Colony Road, Ayodhya Colony, Velachery, Chennai, Tamil Nadu 600042",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.tcs.com/",
+  "phone":"04466166999",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/rKgDGTL3vK6CpWVA6",
+  "categoryName": "Software company"
+},
+{
+  "title": "Tata Consultancy Services",
+  "reviewsCount": 4.4,
+  "street": "1 Etc Tower, ETL Infrastructure Services Limited IT Sez, 200 Feet Radial Rd, MCN Nagar Extension, Perungudi, Chennai, Tamil Nadu 600097",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.tcs.com/",
+  "phone":"04466168888",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/Jayy13Nonf4r8YD69",
+  "categoryName": "Software company"
+},
+{
+  "title": "Deloitte USI",
+  "reviewsCount": 4.7,
+  "street": "International Tech Park, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www2.deloitte.com/ui/en/footerlinks/office-locator.html",
+  "phone":"02261854000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/nJzds3zDb6Ya46yPA",
+  "categoryName": "Software company"
+},
+{
+  "title": "Agilysys Technologies India Private Limited",
+  "reviewsCount": 4.2,
+  "street": "10th floor, X6RX+73Q, Ramanujan IT City, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.agilysys.com/",
+  "phone":"04466239200",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/yAFnxk8gGUqF8zDB7",
+  "categoryName": "Software company"
+},
+{
+  "title": "Bally Technologies India Pvt Ltd",
+  "reviewsCount": 4.5,
+  "street": "Unit 1&4, 11th Floor, Crest Building, International Tech Park, Tharamani - CSIR road, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "phone":"04442212000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/XVmUFXkkRnfBYCLTA",
+  "categoryName": "Software company"
+},
+{
+  "title": "Thoughtworks Technologies",
+  "reviewsCount": 4.6,
+  "street": "International Tech Park, Zenith - 9th Floor, Ascendas, Taramani Link Rd, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.thoughtworks.com/",
+  "phone":"04449018400",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/6JSHbuQ2xNT4RPo2A",
+  "categoryName": "Software company"
+},
+{
+  "title": "AstraZeneca India Pvt Ltd",
+  "reviewsCount": 4.7,
+  "street": "Ramanujan IT City, 10th & 11th Floor Neville Tower 2nd Floor Hardy Towers, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.astrazeneca.com/",
+  "phone":"04440461800",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/8zZnrhx8PXzB7sTu8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Tekclan Software Solutions PVT LTD",
+  "reviewsCount": 4.8,
+  "street": "4th Floor, PHASE-2, TICEL Biopark Rd, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.tekclansolutions.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/8zZnrhx8PXzB7sTu8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Kaar Technologies Pvt Ltd",
+  "reviewsCount": 4.2,
+  "street": "Block 17, 17, MGR Film City Road, Kanagam, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.kaartech.com/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/SUHERhUbySYGuZd96",
+  "categoryName": "Software company"
+},
+{
+  "title": "Codoid Innovations Private Limited",
+  "reviewsCount": 4.6,
+  "street": "TIDEL Park, 305, 3rd Floor, D-North, 4, Rajiv Gandhi Salai, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://codoid.com/",
+  "phone":"18002126988",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/CTXmXfx8PXaxnLLp8",
+  "categoryName": "Software company"
+},
+{
+  "title": "Inlogic Technologies",
+  "reviewsCount": 4.0,
+  "street": "Ground Floor, Elnet Software City Admin Block, Elnet Software City, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://inlogic.in/",
+  "phone":"04443438600",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/N2uRruW6ZNKpdox3A",
+  "categoryName": "Software company"
+},
+{
+  "title": "Edlocus Solutions Private Limited",
+  "reviewsCount": 4.4,
+  "street": "Module 3, Block B, Phase 2, IIT MADRAS Research Park, Kanagam Road, Taramani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.edlocus.com/",
+  "phone":"09600066805",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/35SMV1zDYQtLDQhs9",
+  "categoryName": "Software company"
+},
+{
+  "title": "Indix",
+  "reviewsCount": 4.4,
+  "street": "2nd floor, Neville Block, Ramanujan IT City,, MGR Film City Road, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "phone":"02124715005",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/X28G5yVgXSk487xW6",
+  "categoryName": "Software company"
+},
+{
+  "title": "DataTracks Services Private Limited",
+  "reviewsCount": 4.0,
+  "street": "7th floor, Hardy Tower, Ramanujan Intellion Park, Rajiv Gandhi Salai, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.datatracks.com/",
+  "phone":"04440089000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/4kEqTqT2LFCrdfcY6",
+  "categoryName": "Software company"
+},
+{
+  "title": "CDW TECHNOLOGIES INDIA PRIVATE LIMITED (Formerly known as Sirius Computer Solutions India Private Limited)",
+  "reviewsCount": 4.5,
+  "street": "Block 17, 17, MGR Film City Road, Kanagam, Tharamani, Chennai, Tamil Nadu 600113",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.cdw.com/",
+  "phone":"04466507800",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/ybjaqUbL9fE4s5dq9",
+  "categoryName": "Software company"
+},
+{
+  "title": "Deloitte",
+  "reviewsCount": 4.5,
+  "street": "Old No. 37, New No. 52, 7th Floor, ASV N Ramana Tower, Venkatnarayana Road, T. Nagar, Chennai, Tamil Nadu 600017",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www2.deloitte.com/in/en.html",
+  "phone":"04466885000",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/aGHYMEttfN8mfJ6Y9",
+  "categoryName": "Financial Audit"
+},
+{
+  "title": "PwC Chennai - Office",
+  "reviewsCount": 4.5,
+  "street": "7th Floor, Menon Eternity, Cognizant Technology Solutions 2, 165, St Marys Rd, Austin Nagar, Alwarpet, Chennai, Tamil Nadu 600028",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"https://www.pwc.in/",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/BwaZQQbSeKTi67xi8",
+  "categoryName": "Financial Audit"
+},
+{
+  "title": "Syncfusion Software Private Limited",
+  "reviewsCount": 3.9,
+  "street": "Eymard Complex, AJ 217, 4th Ave, A J Block, AI Block, Anna Nagar, Chennai, Tamil Nadu 600040",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "countryCode": "IN",
+  "website":"http://www.syncfusion.com/",
+  "phone":"04426210413",
+  "categories": [
+    "Software company"
+  ],
+  "url": "https://maps.app.goo.gl/khgadt3Ums3DP1it5",
+  "categoryName": "Financial Audit"
 }
 ]
