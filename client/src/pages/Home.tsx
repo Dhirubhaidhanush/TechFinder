@@ -10,10 +10,10 @@ function StarRating({ score }) {
   const starsText = `${score} star${score !== 1 ? 's' : ''}`;
 
   return (
-    <div className="flex items-center gap-1.5 bg-[#FFFBEB] text-[#D97706] px-3 py-1.5 rounded-lg shrink-0">
+    <div className="flex items-center gap-1.5 bg-white text-violet-500 px-3 py-1.5 rounded-lg shrink-0">
       <div className="flex">
         {[...Array(fullStars)].map((_, i) => (
-          <Star key={i} className="w-3.5 h-3.5 fill-[#F59E0B] text-[#F59E0B]" />
+          <Star key={i} className="w-3.5 h-3.5 fill-violet-500 text-violet-500" />
         ))}
       </div>
       <span className="text-xs font-bold whitespace-nowrap">{starsText}</span>
@@ -28,7 +28,11 @@ export default function Home() {
   const [filteredCompanies, setFilteredCompanies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedCompany, setSelectedCompany] = useState(null);
+<<<<<<< HEAD
   const [selectedCity, setSelectedCity] = useState("");
+=======
+  const [selectedState, setSelectedState] = useState("");
+>>>>>>> 8bf8722 (first commit)
 
   useEffect(() => {
     const fetchCompanies = async () => {
@@ -36,9 +40,15 @@ export default function Home() {
       try {
         let data;
         if (searchQuery.trim()) {
+<<<<<<< HEAD
           data = await api.searchCompanies(searchQuery, selectedCity);
         } else {
           data = await api.getCompaniesByCity(selectedCity);
+=======
+          data = await api.searchCompanies(searchQuery, selectedState);
+        } else {
+          data = await api.getCompaniesByState(selectedState);
+>>>>>>> 8bf8722 (first commit)
         }
         setCompanies(data);
       } catch (error) {
@@ -53,7 +63,11 @@ export default function Home() {
     }, 300);
 
     return () => clearTimeout(timer);
+<<<<<<< HEAD
   }, [searchQuery, selectedCity]);
+=======
+  }, [searchQuery, selectedState]);
+>>>>>>> 8bf8722 (first commit)
 
   // ✅ FIXED FILTER LOGIC (IMPORTANT)
   useEffect(() => {
@@ -75,11 +89,19 @@ export default function Home() {
       <nav className="w-full px-6 sm:px-8 py-4 sm:py-6 flex items-center justify-between border-b border-gray-100 sticky top-0 bg-white/80 backdrop-blur-md z-40">
 
         <div className="flex items-center gap-2">
+<<<<<<< HEAD
           <div className="w-8 h-8 bg-green-400 rounded-lg flex items-center justify-center">
             <Building className="w-5 h-5 text-white" />
           </div>
           <span className="text-xl sm:text-2xl font-bold text-green-400 font-display tracking-tight">
             Tech<span className="text-green-400">Finder</span>
+=======
+          <div className="w-8 h-8 bg-violet-500 rounded-lg flex items-center justify-center">
+            <Building className="w-5 h-5 text-white" />
+          </div>
+          <span className="text-xl sm:text-2xl font-bold text-violet-500 font-display tracking-tight">
+            Print<span className="text-violet-500">Finder</span>
+>>>>>>> 8bf8722 (first commit)
           </span>
         </div>
 
@@ -93,21 +115,34 @@ export default function Home() {
               className="
         appearance-none
         bg-white
+<<<<<<< HEAD
         border border-gray-200
+=======
+        border border-violet-200
+>>>>>>> 8bf8722 (first commit)
         text-gray-700
         text-sm sm:text-base
         font-medium
         px-4 sm:px-5 py-2.5 pr-10
         rounded-full
         shadow-sm
+<<<<<<< HEAD
         hover:border-green-400
         focus:outline-none focus:ring-2 focus:ring-green-200
+=======
+        hover:border-violet-500
+        focus:outline-none focus:ring-2 focus:ring-violet-200
+>>>>>>> 8bf8722 (first commit)
         transition-all duration-200
         cursor-pointer
         flex items-center justify-between gap-2
       "
             >
+<<<<<<< HEAD
               <span>{selectedCity || "Select City"}</span>
+=======
+              <span>{selectedState || "Select State"}</span>
+>>>>>>> 8bf8722 (first commit)
 
               {/* Arrow */}
               <svg
@@ -126,22 +161,151 @@ export default function Home() {
               <div className="absolute right-0 mt-2 w-44 bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden animate-fade-in">
                 <div
                   onClick={() => {
+<<<<<<< HEAD
                     setSelectedCity("Chennai");
                     setIsOpen(false);
                   }}
                   className="px-4 py-2 hover:bg-green-50 cursor-pointer text-gray-700 flex justify-between"
                 >
                   Chennai {selectedCity === "Chennai" && "✔"}
+=======
+                    setSelectedState("Tamil Nadu");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Tamil Nadu {selectedState === "Tamil Nadu" && "✔"}
+>>>>>>> 8bf8722 (first commit)
                 </div>
 
                 <div
                   onClick={() => {
+<<<<<<< HEAD
                     setSelectedCity("Bengaluru");
                     setIsOpen(false);
                   }}
                   className="px-4 py-2 hover:bg-green-50 cursor-pointer text-gray-700 flex justify-between"
                 >
                   Bengaluru {selectedCity === "Bengaluru" && "✔"}
+=======
+                    setSelectedState("Kerala");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Kerala {selectedState === "Kerala" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Chhattisgarh");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Chhattisgarh {selectedState === "Chhattisgarh" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Bihar");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Bihar {selectedState === "Bihar" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Sikkim");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Sikkim {selectedState === "Sikkim" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Uttar Pradesh");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Uttar Pradesh {selectedState === "Uttar Pradesh" && "✔"}
+                </div>
+
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Karnataka");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Karnataka {selectedState === "Karnataka" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Delhi");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Delhi {selectedState === "Delhi" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Maharashtra");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Maharashtra {selectedState === "Maharashtra" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("West Bengal");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  West Bengal {selectedState === "West Bengal" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Telangana");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Telangana {selectedState === "Telangana" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Goa");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Goa {selectedState === "Goa" && "✔"}
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Gujarat");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-100 cursor-pointer text-gray-700 flex justify-between"
+                >
+                  Gujarat {selectedState === "Gujarat" && "✔"}
+>>>>>>> 8bf8722 (first commit)
                 </div>
               </div>
             )}
@@ -170,22 +334,146 @@ export default function Home() {
               <div className="absolute right-0 mt-2 w-44 bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden">
                 <div
                   onClick={() => {
+<<<<<<< HEAD
                     setSelectedCity("Chennai");
                     setIsOpen(false);
                   }}
                   className="px-4 py-2 hover:bg-green-50 cursor-pointer text-gray-700"
                 >
                   Chennai
+=======
+                    setSelectedState("Tamil Nadu");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Tamil Nadu
+>>>>>>> 8bf8722 (first commit)
                 </div>
 
                 <div
                   onClick={() => {
+<<<<<<< HEAD
                     setSelectedCity("Bengaluru");
                     setIsOpen(false);
                   }}
                   className="px-4 py-2 hover:bg-green-50 cursor-pointer text-gray-700"
                 >
                   Bengaluru
+=======
+                    setSelectedState("Karnataka");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Karnataka
+                </div>
+                <div
+                  onClick={() => {
+                    setSelectedState("Delhi");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Delhi
+                </div>
+                <div
+                  onClick={() => {
+                    setSelectedState("Maharashtra");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Maharashtra
+                </div>
+                <div
+                  onClick={() => {
+                    setSelectedState("West Bengal");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  West Bengal
+                </div>
+                <div
+                  onClick={() => {
+                    setSelectedState("Telangana");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Telangana
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Goa");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Goa
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Gujarat");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Gujarat
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Kerala");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Kerala
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Bihar");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Bihar
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Uttar Pradesh");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Uttar Pradesh
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Chhattisgarh");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Chhattisgarh
+                </div>
+
+                <div
+                  onClick={() => {
+                    setSelectedState("Sikkim");
+                    setIsOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-violet-50 cursor-pointer text-gray-700"
+                >
+                  Sikkim
+>>>>>>> 8bf8722 (first commit)
                 </div>
               </div>
             )}
@@ -196,15 +484,21 @@ export default function Home() {
 
       {/* Header Section */}
       <div className="pt-16 px-8 pb-12 text-center max-w-3xl mx-auto flex flex-col items-center w-full relative">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-sm font-medium mb-8 border border-green-100">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-50 text-violet-500 text-sm font-medium mb-8 border border-green-100">
           <Building className="w-4 h-4" />
           <span>Corporate Tech Ecosystem</span>
         </div>
 
         <h1 className="text-5xl md:text-[3.5rem] font-extrabold tracking-tight text-[#111827] leading-[1.1] mb-6 font-display">
+<<<<<<< HEAD
           Discover all <span className="text-green-400">IT Companies</span>
           <br />
           in {selectedCity === "Bengaluru" ? "Bengaluru" : "Chennai"}
+=======
+          Discover all <span className="text-violet-500">Print Companies</span>
+          <br />
+          in {selectedState || "India"}
+>>>>>>> 8bf8722 (first commit)
         </h1>
 
         <p className="text-gray-500 text-lg mb-10 max-w-2xl">
@@ -237,7 +531,7 @@ export default function Home() {
         </div>
 
         {loading ? (
-          <div className="text-center py-20 text-green-500 animate-pulse font-medium">
+          <div className="text-center py-20 text-violet-500 animate-pulse font-medium">
             Loading companies...
           </div>
         ) : filteredCompanies.length === 0 ? (
@@ -261,7 +555,11 @@ export default function Home() {
                     {company.title}
                   </h3>
 
+<<<<<<< HEAD
                   <div className="flex items-center gap-2 text-green-600 text-sm font-medium">
+=======
+                  <div className="flex items-center gap-2 text-violet-500 text-sm font-medium">
+>>>>>>> 8bf8722 (first commit)
                     <Building className="w-4 h-4" />
                     <span>{company.categories?.[0] || "Software company"}</span>
                   </div>
@@ -273,7 +571,11 @@ export default function Home() {
                     </span>
                   </div>
 
+<<<<<<< HEAD
                   <span className="bg-green-100 text-green-700 text-sm px-4 py-1 rounded-full w-fit">
+=======
+                  <span className="bg-violet-50 text-violet-500 text-sm px-4 py-1 rounded-full w-fit">
+>>>>>>> 8bf8722 (first commit)
                     {company.categories?.[0] || "Software company"}
                   </span>
                 </div>
@@ -284,7 +586,11 @@ export default function Home() {
                   <div className="flex gap-4">
                     {company.website && (
                       <a href={company.website} target="_blank" onClick={(e) => e.stopPropagation()}
+<<<<<<< HEAD
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg text-center font-medium">
+=======
+                        className="flex-1 bg-violet-500 hover:bg-violet-500 text-white py-3 rounded-lg text-center font-medium">
+>>>>>>> 8bf8722 (first commit)
                         Website
                       </a>
                     )}
@@ -316,7 +622,11 @@ export default function Home() {
             </button>
 
             <div className="p-8">
+<<<<<<< HEAD
               <h2 className="text-2xl font-bold text-green-400 mb-4">
+=======
+              <h2 className="text-2xl font-bold text-violet-500 mb-4">
+>>>>>>> 8bf8722 (first commit)
                 {selectedCompany.title}
               </h2>
 
@@ -337,7 +647,11 @@ export default function Home() {
 
               <div className="flex gap-3">
                 {selectedCompany.website && (
+<<<<<<< HEAD
                   <a href={selectedCompany.website} target="_blank" className="flex-1 bg-green-500 text-white py-3 rounded-xl text-center">
+=======
+                  <a href={selectedCompany.website} target="_blank" className="flex-1 bg-violet-500 text-white py-3 rounded-xl text-center">
+>>>>>>> 8bf8722 (first commit)
                     Website
                   </a>
                 )}
