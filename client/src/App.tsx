@@ -25,7 +25,7 @@ function App() {
         <Toaster />
 
         <div className="flex flex-col min-h-screen">
-          
+
           {/* Main Content */}
           <div className="flex-grow">
             <Router />
