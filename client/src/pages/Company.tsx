@@ -11,7 +11,7 @@ export default function Company() {
   useEffect(() => {
     const fetchCompany = async () => {
       if (!params?.id) return;
-      
+
       setLoading(true);
       try {
         const data = await api.getCompany(params.id);
